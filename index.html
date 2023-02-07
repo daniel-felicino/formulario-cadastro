@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <main>
+
+        <!-- Carregamento de conclusão de preenchimento de formulario -->
+
+        <div id="centralizarLoadingRedirecionamento">
+            <div id="loadingRedirecionamento">
+                <img style="width: 100px;height: 100px;margin-top: 135px;" src="./IMG/aviao.png">
+
+                <p style="color: #3f236c; ;font-family: Alliance-No-1, sans-serif;margin-top: 20px;
+                font-size: 22px;">Obrigado por ser uma das nossas histórias de sucesso! </p>
+                <img style="margin-top:20px;" class="gifCarregamento" src="./IMG/loading-103.gif">
+            </div>
+            <div id="loadingSucesso">
+                <img src="./IMG/sucess.gif">
+            </div>
+        </div>
+        <!-- Formulario -->
+        <div id="container">
+
+            <form id="formulario">
+
+                <div class="styleInput">
+                    <p>Criar sua Conta</p>
+                    <div style="margin-top: 50px;">
+                        <label>Nome:</label>
+                        <input class="inputNome" id="nome" type="text" placeholder="Digite seu nome...">
+                    </div>
+
+                    <div style="margin-top: 19px;">
+                        <label>Empresa:</label>
+                        <input class="inputEmpresa" id="empresa" type="text" placeholder="Digite sua empresa...">
+                    </div>
+
+                    <div style="margin-top: 19px;">
+                        <label>Email:</label>
+                        <input class="inputEmail" id="email" type="email"  placeholder="Digite seu email...">
+                    </div>
+
+                    <div style="margin-top: 19px;">
+                        <label>Celular:</label>
+                        <input style="margin-top: 19px;" class="inputCelular" maxlength="15" id="celular"
+                            onkeyup="mascaraCelular(event)" type="text" placeholder="Digite seu Celular...">
+                    </div>
+
+                </div>
+                <div>
+                    <span
+                        style="margin-right: 41px;width: 75%;float: right;margin-top: 10px; background-color:rgb(255, 154, 68);color: white; padding: 10px; border-radius: 3px;"
+                        class="spanNome" id="IdSpanNome"> Informe seu Nome </span>
+                    <span
+                        style="margin-right: 41px;width: 75%;float: right;margin-top: 10px; background-color:rgb(255, 154, 68);color: white; padding: 10px; border-radius: 3px;"
+                        class="spanEmpresa" id="IdSpanEmpresa"> Informe sua Empresa</span>
+                    <span
+                        style="margin-right: 41px;width: 75%;float: right;margin-top: 10px; background-color:rgb(255, 154, 68);color: white; padding: 10px; border-radius: 3px;"
+                        class="spanEmail" id="IdSpanEmail"> Informe seu Email</span>
+                    <span
+                        style="margin-right: 41px;width: 75%;float: right;margin-top: 10px; background-color:rgb(255, 154, 68);color: white; padding: 10px; border-radius: 3px;"
+                        class="spanCelular" id="IdSpanCelular"> Informe seu Celular</span>
+                </div>
+                <div>
+                    <button style="  color: #3f236c;  background: rgb(141 186 239);
+                    " id="btnEnviarForm" >Continue</button>
+                </div>
+            </form>
+            <div class="logo" id="logo">
+                <h1>Uma única conta. </h1>
+                <p>Todos trabalhando para você.</p>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="./JS/index.js"></script>
+    <script src="./JS/mascaraCelular.js"></script>
+
+</body>
+
+</html>
